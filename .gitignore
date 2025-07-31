@@ -158,4 +158,5 @@ version
 # VS Code
 # ====================
 # Commented out intentionally: You can include this if you want to ignore all VS Code settings
-# .vscode/
+.vscode/
+server/node_modules/
