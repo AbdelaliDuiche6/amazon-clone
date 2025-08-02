@@ -12,13 +12,13 @@ const DB =
   "mongodb+srv://Abdelali:xJjgjmtoyNiMS8Vf@cluster-1.byycnfm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster-1";
 
 // MIDDLEWARE
+app.use(express.json());
 app.use(authRouter);
-
 // CONNECTIONS
 mongoose
   .connect(DB)
   .then(() => {
-    console.log("Connected");
+    console.log("Connected Successfully");
   })
   .catch((e) => {
     console.log(e);
