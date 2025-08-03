@@ -2,9 +2,9 @@ const express = require("express");
 const User = require("../models/user");
 const bcryptjs = require("bcryptjs");
 
-
 const authRouter = express.Router();
 
+// SIGNUP ROUTE
 authRouter.post("/api/signup", async (req, res) => {
   try {
     // get all data from the client
@@ -24,11 +24,14 @@ authRouter.post("/api/signup", async (req, res) => {
       name,
     });
     user = await user.save();
+
     // return that data to the user
     res.json(user);
   } catch (e) {
     res.status(500).json({ error: e.message });
   }
 });
+
+// LOGIN ROUTE
 
 module.exports = authRouter;
