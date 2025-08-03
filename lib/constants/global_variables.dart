@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+
+// TODO: MAKE SURE TO DELETE YOUR IP ADRESSS,
+String uri = 'http://<ip-address>';
+
 class GlobalVariables {
   // COLORS
   static const appBarGradient = LinearGradient(
@@ -14,5 +18,4 @@ class GlobalVariables {
   static const Color greyBackgroundCOlor = Color(0xffebecee);
   static var selectedNavBarColor = Colors.cyan[800]!;
   static const unselectedNavBarColor = Colors.black87;
-
 }
